@@ -9,7 +9,6 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  /* overflow-y: hidden; */
 }
 
 :root {
@@ -21,11 +20,13 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  width: 100%;
 }
 body {
   background: var(--bg-color);
   color: var(--text-color);
   cursor: url(./assets/mouse1.svg), auto;
+  overflow: hidden;
 }
 
 /* #loader {
@@ -59,6 +60,7 @@ body {
 
 section {
   min-height: 100vh;
+  width: 100vw;
   padding: 10rem 9% 2rem;
 }
 .header {
@@ -197,6 +199,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
   background: var(--snd-bg-color);
 }
 
@@ -795,7 +798,9 @@ span {
     width: 100vw;
     margin-top: 4rem;
   }
-  .project-img {
+  .project-img,
+  .portfolio-box {
+    object-fit: cover;
     padding: 0 2rem;
   }
 }
@@ -804,12 +809,12 @@ span {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
-    overflow-y: hidden;
   }
   .contact form .input-box input {
     width: 100%;
   }
   .project-img {
     padding: 0 5rem;
+    object-fit: cover;
   }
 }
