@@ -65,7 +65,6 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   padding: 2rem 9%;
   background: var(--bg-color);
@@ -805,6 +804,7 @@ span {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+    overflow-y: hidden;
   }
   .contact form .input-box input {
     width: 100%;
