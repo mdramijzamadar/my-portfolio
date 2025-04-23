@@ -10,7 +10,10 @@
   outline: none;
   scroll-behavior: smooth;
 }
-
+a {
+  text-decoration: none;
+  cursor: url(./assets/pointer.svg), pointer;
+}
 :root {
   --bg-color: #191f36;
   --snd-bg-color: #262840;
@@ -28,8 +31,7 @@ body {
   cursor: url(./assets/mouse1.svg), auto;
   overflow: hidden;
 }
-
-/* #loader {
+#loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -41,11 +43,16 @@ body {
   align-items: center;
   z-index: 9999;
 }
-#loader img {
-  width: 20%; 
-  height: auto;
-} */
 
+#loader img {
+  width: 300px;
+  height: 300px;
+}
+
+/* Hide loader when removed */
+.hidden {
+  display: none;
+}
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -633,7 +640,10 @@ span {
   cursor: url(./assets/pointer.svg), pointer;
    
 } */
-
+#result {
+  margin-top: 1rem;
+  color: var(--text-color);
+}
 #back-to-top {
   display: none; /* Hidden by default */
   position: fixed;

@@ -26,9 +26,9 @@
   </head>
   <body>
     <!-- loader -->
-    <!-- <div id="loader">
+    <div id="loader">
       <img src="./assets/loader.gif" alt="Loading..." />
-    </div> -->
+    </div>
 
     <!-- header  -->
     <header class="header">
@@ -116,32 +116,36 @@
           <p>HTML5</p>
         </div>
         <div class="skill-container">
-          <img src="./assets/Tech-icon/html.png" alt="html5" width="40px" />
-          <p>HTML5</p>
+          <img src="./assets/Tech-icon/css-3.png" alt="css" width="40px" />
+          <p>CSS</p>
         </div>
         <div class="skill-container">
-          <img src="./assets/Tech-icon/html.png" alt="html5" width="40px" />
-          <p>HTML5</p>
+          <img src="./assets/Tech-icon/js.png" alt="js" width="40px" />
+          <p>JavaScript</p>
         </div>
         <div class="skill-container">
-          <img src="./assets/Tech-icon/html.png" alt="html5" width="40px" />
-          <p>HTML5</p>
+          <img src="./assets/Tech-icon/typescript.png" alt="ts" width="40px" />
+          <p>TypeScript</p>
         </div>
         <div class="skill-container">
-          <img src="./assets/Tech-icon/html.png" alt="html5" width="40px" />
-          <p>HTML5</p>
+          <img
+            src="./assets/Tech-icon/Tailwind-CSS.png"
+            alt="Tailwind"
+            width="40px"
+          />
+          <p>Tailwind CSS</p>
         </div>
         <div class="skill-container">
-          <img src="./assets/Tech-icon/html.png" alt="html5" width="40px" />
-          <p>HTML5</p>
+          <img src="./assets/Tech-icon/react.png" alt="react" width="40px" />
+          <p>React</p>
         </div>
         <div class="skill-container">
-          <img src="./assets/Tech-icon/html.png" alt="html5" width="40px" />
-          <p>HTML5</p>
+          <img src="./assets/Tech-icon/redux.png" alt="redux" width="40px" />
+          <p>Redux</p>
         </div>
         <div class="skill-container">
-          <img src="./assets/Tech-icon/html.png" alt="html5" width="40px" />
-          <p>HTML5</p>
+          <img src="./assets/Tech-icon/nodejs.png" alt="nodejs" width="40px" />
+          <p>Node.js</p>
         </div>
       </div>
       <!-- tech stack img -->
@@ -333,46 +337,39 @@
             </div>
           </div>
         </div>
-        <!-- 7 -->
-        <!-- <div class="portfolio-box">
-          <img src="./assets/img.jpg" alt="" />
-          <div class="porfolio-layer">
-            <h4>Web design7</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              earum laudantium ut!
-            </p>
-            <a href="#"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div> -->
       </div>
     </section>
     <!-------- -----------------contact design------------------------ -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
-      <form action="#">
+      <form method="POST" id="form">
+        <input
+          type="hidden"
+          name="access_key"
+          value="163e7dbb-b424-4dc8-aa3e-7cc8d8f30c0b"
+        />
+
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" placeholder="Full Name" name="name" />
+          <input type="email" placeholder="Email Address" name="email" />
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email subject" />
+          <input type="number" placeholder="Mobile Number" name="mobile-no" />
+          <input type="text" placeholder="Email subject" name="subject" />
         </div>
         <textarea
-          name=""
+          name="Message"
           id=""
           cols="30"
           rows="10"
           placeholder="Your Message"
         ></textarea>
-        <input type="button" value="Send message" class="btn" />
+        <button type="submit" class="btn">Send Message</button>
+        <div id="result"></div>
       </form>
     </section>
-    <!-- footer design -->
+    <!------------------------------ footer design----------------------- -->
     <footer class="footer">
       <div class="footer-text">
         <p>Copyright &copy; 2024 by @mdramijzamadar | All Rights Reserved</p>
